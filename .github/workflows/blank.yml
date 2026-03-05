@@ -1,21 +1,28 @@
 name: Build APK
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: 'gradle'
+
       - name: Build APK
         run: |
           chmod +x gradlew
-          ./gradlew assembleDebug
+          # Використовуємо конкретне завдання для збірки звичайної налагоджувальної версії
+          ./gradlew :TMessagesProj:assembleAfatDebug --no-daemon --stacktrace
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: MyTelegramAPK
+          name: iMeGram
+          # Шлях до готового файлу після збірки модуля TMessagesProj
           path: TMessagesProj/build/outputs/apk/afat/debug/*.apk
