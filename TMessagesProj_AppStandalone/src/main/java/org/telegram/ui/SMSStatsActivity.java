@@ -1,11 +1,11 @@
-package org.telegram.ui;
+package org.iMeGram.ui;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
-import static org.telegram.messenger.AndroidUtilities.dpf2;
-import static org.telegram.messenger.AndroidUtilities.isInAirplaneMode;
-import static org.telegram.messenger.LocaleController.formatPluralString;
-import static org.telegram.messenger.LocaleController.formatString;
-import static org.telegram.messenger.LocaleController.getString;
+import static org.iMeGram.messenger.AndroidUtilities.dp;
+import static org.iMeGram.messenger.AndroidUtilities.dpf2;
+import static org.iMeGram.messenger.AndroidUtilities.isInAirplaneMode;
+import static org.iMeGram.messenger.LocaleController.formatPluralString;
+import static org.iMeGram.messenger.LocaleController.formatString;
+import static org.iMeGram.messenger.LocaleController.getString;
 
 import android.Manifest;
 import android.content.Context;
@@ -43,37 +43,37 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.Emoji;
-import org.telegram.messenger.FileLog;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.LocationController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.SMSJobController;
-import org.telegram.messenger.browser.Browser;
-import org.telegram.messenger.web.R;
-import org.telegram.tgnet.ConnectionsManager;
-import org.telegram.tgnet.TLRPC;
-import org.telegram.tgnet.TL_smsjobs;
-import org.telegram.ui.ActionBar.AlertDialog;
-import org.telegram.ui.ActionBar.BaseFragment;
-import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.Cells.HeaderCell;
-import org.telegram.ui.Cells.LanguageCell;
-import org.telegram.ui.Cells.TextCell;
-import org.telegram.ui.Cells.TextInfoPrivacyCell;
-import org.telegram.ui.Components.AnimatedTextView;
-import org.telegram.ui.Components.BottomSheetWithRecyclerListView;
-import org.telegram.ui.Components.BulletinFactory;
-import org.telegram.ui.Components.CombinedDrawable;
-import org.telegram.ui.Components.CubicBezierInterpolator;
-import org.telegram.ui.Components.LayoutHelper;
-import org.telegram.ui.Components.LinkSpanDrawable;
-import org.telegram.ui.Components.ListView.AdapterWithDiffUtils;
-import org.telegram.ui.Components.Premium.LimitPreviewView;
-import org.telegram.ui.Components.Premium.boosts.GiftInfoBottomSheet;
-import org.telegram.ui.Components.RecyclerListView;
-import org.telegram.ui.Stories.recorder.ButtonWithCounterView;
+import org.iMeGram.messenger.AndroidUtilities;
+import org.iMeGram.messenger.Emoji;
+import org.iMeGram.messenger.FileLog;
+import org.iMeGram.messenger.LocaleController;
+import org.iMeGram.messenger.LocationController;
+import org.iMeGram.messenger.NotificationCenter;
+import org.iMeGram.messenger.SMSJobController;
+import org.iMeGram.messenger.browser.Browser;
+import org.iMeGram.messenger.web.R;
+import org.iMeGram.tgnet.ConnectionsManager;
+import org.iMeGram.tgnet.TLRPC;
+import org.iMeGram.tgnet.TL_smsjobs;
+import org.iMeGram.ui.ActionBar.AlertDialog;
+import org.iMeGram.ui.ActionBar.BaseFragment;
+import org.iMeGram.ui.ActionBar.Theme;
+import org.iMeGram.ui.Cells.HeaderCell;
+import org.iMeGram.ui.Cells.LanguageCell;
+import org.iMeGram.ui.Cells.TextCell;
+import org.iMeGram.ui.Cells.TextInfoPrivacyCell;
+import org.iMeGram.ui.Components.AnimatedTextView;
+import org.iMeGram.ui.Components.BottomSheetWithRecyclerListView;
+import org.iMeGram.ui.Components.BulletinFactory;
+import org.iMeGram.ui.Components.CombinedDrawable;
+import org.iMeGram.ui.Components.CubicBezierInterpolator;
+import org.iMeGram.ui.Components.LayoutHelper;
+import org.iMeGram.ui.Components.LinkSpanDrawable;
+import org.iMeGram.ui.Components.ListView.AdapterWithDiffUtils;
+import org.iMeGram.ui.Components.Premium.LimitPreviewView;
+import org.iMeGram.ui.Components.Premium.boosts.GiftInfoBottomSheet;
+import org.iMeGram.ui.Components.RecyclerListView;
+import org.iMeGram.ui.Stories.recorder.ButtonWithCounterView;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -163,7 +163,7 @@ public class SMSStatsActivity extends GradientHeaderActivity implements Notifica
                 default:
                 case VIEW_TYPE_SHADOW:
                     view = new TextInfoPrivacyCell(getContext());
-                    Drawable shadowDrawable = Theme.getThemedDrawable(getContext(), org.telegram.messenger.R.drawable.greydivider, Theme.getColor(Theme.key_windowBackgroundGrayShadow, resourceProvider));
+                    Drawable shadowDrawable = Theme.getThemedDrawable(getContext(), org.iMeGram.messenger.R.drawable.greydivider, Theme.getColor(Theme.key_windowBackgroundGrayShadow, resourceProvider));
                     Drawable background = new ColorDrawable(Theme.getColor(Theme.key_windowBackgroundGray));
                     CombinedDrawable combinedDrawable = new CombinedDrawable(background, shadowDrawable, 0, 0);
                     combinedDrawable.setFullsize(true);
@@ -473,7 +473,7 @@ public class SMSStatsActivity extends GradientHeaderActivity implements Notifica
                             builder.getDismissRunnable().run();
                         });
                     }
-                    builder.setNegativeButton(LocaleController.getString("Cancel", org.telegram.messenger.R.string.Cancel), null);
+                    builder.setNegativeButton(LocaleController.getString("Cancel", org.iMeGram.messenger.R.string.Cancel), null);
                     showDialog(builder.create());
                 } catch (Exception e) {
                     FileLog.e(e);

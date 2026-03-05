@@ -1,9 +1,9 @@
-package org.telegram.ui;
+package org.iMeGram.ui;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
-import static org.telegram.messenger.LocaleController.formatPluralString;
-import static org.telegram.messenger.LocaleController.formatString;
-import static org.telegram.messenger.LocaleController.getString;
+import static org.iMeGram.messenger.AndroidUtilities.dp;
+import static org.iMeGram.messenger.LocaleController.formatPluralString;
+import static org.iMeGram.messenger.LocaleController.formatString;
+import static org.iMeGram.messenger.LocaleController.getString;
 
 import android.Manifest;
 import android.app.Activity;
@@ -26,29 +26,29 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.BotWebViewVibrationEffect;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.SMSJobController;
-import org.telegram.messenger.UserConfig;
-import org.telegram.messenger.Utilities;
-import org.telegram.messenger.browser.Browser;
-import org.telegram.messenger.web.R;
-import org.telegram.tgnet.ConnectionsManager;
-import org.telegram.tgnet.TLRPC;
-import org.telegram.tgnet.TL_smsjobs;
-import org.telegram.ui.ActionBar.AlertDialog;
-import org.telegram.ui.ActionBar.BaseFragment;
-import org.telegram.ui.ActionBar.BottomSheet;
-import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.Components.BulletinFactory;
-import org.telegram.ui.Components.CheckBoxSquare;
-import org.telegram.ui.Components.FireworksOverlay;
-import org.telegram.ui.Components.LayoutHelper;
-import org.telegram.ui.Components.LinkSpanDrawable;
-import org.telegram.ui.Components.RLottieImageView;
-import org.telegram.ui.Stories.recorder.ButtonWithCounterView;
+import org.iMeGram.messenger.AndroidUtilities;
+import org.iMeGram.messenger.BotWebViewVibrationEffect;
+import org.iMeGram.messenger.LocaleController;
+import org.iMeGram.messenger.NotificationCenter;
+import org.iMeGram.messenger.SMSJobController;
+import org.iMeGram.messenger.UserConfig;
+import org.iMeGram.messenger.Utilities;
+import org.iMeGram.messenger.browser.Browser;
+import org.iMeGram.messenger.web.R;
+import org.iMeGram.tgnet.ConnectionsManager;
+import org.iMeGram.tgnet.TLRPC;
+import org.iMeGram.tgnet.TL_smsjobs;
+import org.iMeGram.ui.ActionBar.AlertDialog;
+import org.iMeGram.ui.ActionBar.BaseFragment;
+import org.iMeGram.ui.ActionBar.BottomSheet;
+import org.iMeGram.ui.ActionBar.Theme;
+import org.iMeGram.ui.Components.BulletinFactory;
+import org.iMeGram.ui.Components.CheckBoxSquare;
+import org.iMeGram.ui.Components.FireworksOverlay;
+import org.iMeGram.ui.Components.LayoutHelper;
+import org.iMeGram.ui.Components.LinkSpanDrawable;
+import org.iMeGram.ui.Components.RLottieImageView;
+import org.iMeGram.ui.Stories.recorder.ButtonWithCounterView;
 
 import java.util.Locale;
 

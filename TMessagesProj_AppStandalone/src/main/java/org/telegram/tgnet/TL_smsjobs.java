@@ -1,4 +1,4 @@
-package org.telegram.tgnet;
+package org.iMeGram.tgnet;
 
 public class TL_smsjobs {
 

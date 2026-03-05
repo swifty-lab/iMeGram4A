@@ -1,6 +1,6 @@
-package org.telegram.ui.Components;
+package org.iMeGram.ui.Components;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.iMeGram.messenger.AndroidUtilities.dp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
-import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.IUpdateLayout;
+import org.iMeGram.messenger.AndroidUtilities;
+import org.iMeGram.messenger.ApplicationLoader;
+import org.iMeGram.messenger.LocaleController;
+import org.iMeGram.messenger.R;
+import org.iMeGram.ui.ActionBar.Theme;
+import org.iMeGram.ui.IUpdateLayout;
 
 import java.io.File;
 
@@ -64,7 +64,7 @@ public class UpdateLayout extends IUpdateLayout {
             } else {
                 final File file = ApplicationLoader.applicationLoaderInstance.getDownloadedUpdateFile();
                 if (file != null) {
-                    AndroidUtilities.openForView(file, "Telegram.apk", "application/vnd.android.package-archive", activity, null, false);
+                    AndroidUtilities.openForView(file, "iMeGram.apk", "application/vnd.android.package-archive", activity, null, false);
                 }
             }
         });

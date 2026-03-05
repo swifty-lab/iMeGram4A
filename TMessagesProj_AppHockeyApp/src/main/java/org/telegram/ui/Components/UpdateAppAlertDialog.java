@@ -1,4 +1,4 @@
-package org.telegram.ui.Components;
+package org.iMeGram.ui.Components;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -23,22 +23,22 @@ import android.widget.TextView;
 
 import androidx.core.widget.NestedScrollView;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.ApplicationLoader;
-import org.telegram.messenger.BetaUpdate;
-import org.telegram.messenger.DocumentObject;
-import org.telegram.messenger.Emoji;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLocation;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.MessageObject;
-import org.telegram.messenger.NotificationCenter;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SvgHelper;
-import org.telegram.tgnet.TLRPC;
-import org.telegram.ui.ActionBar.BottomSheet;
-import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.Stories.recorder.ButtonWithCounterView;
+import org.iMeGram.messenger.AndroidUtilities;
+import org.iMeGram.messenger.ApplicationLoader;
+import org.iMeGram.messenger.BetaUpdate;
+import org.iMeGram.messenger.DocumentObject;
+import org.iMeGram.messenger.Emoji;
+import org.iMeGram.messenger.FileLoader;
+import org.iMeGram.messenger.ImageLocation;
+import org.iMeGram.messenger.LocaleController;
+import org.iMeGram.messenger.MessageObject;
+import org.iMeGram.messenger.NotificationCenter;
+import org.iMeGram.messenger.R;
+import org.iMeGram.messenger.SvgHelper;
+import org.iMeGram.tgnet.TLRPC;
+import org.iMeGram.ui.ActionBar.BottomSheet;
+import org.iMeGram.ui.ActionBar.Theme;
+import org.iMeGram.ui.Stories.recorder.ButtonWithCounterView;
 
 import java.io.File;
 
@@ -301,7 +301,7 @@ public class UpdateAppAlertDialog extends BottomSheet {
                 if (file == null) return;
                 Activity activity = AndroidUtilities.findActivity(getContext());
                 if (activity == null) return;
-                AndroidUtilities.openForView(file, "Telegram.apk", "application/vnd.android.package-archive", activity, null, false);
+                AndroidUtilities.openForView(file, "iMeGram.apk", "application/vnd.android.package-archive", activity, null, false);
                 dismiss();
             });
         } else {

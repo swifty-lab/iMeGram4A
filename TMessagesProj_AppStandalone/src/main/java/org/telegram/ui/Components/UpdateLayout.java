@@ -1,6 +1,6 @@
-package org.telegram.ui.Components;
+package org.iMeGram.ui.Components;
 
-import static org.telegram.messenger.AndroidUtilities.dp;
+import static org.iMeGram.messenger.AndroidUtilities.dp;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,14 +14,14 @@ import android.widget.FrameLayout;
 
 import androidx.annotation.NonNull;
 
-import org.telegram.messenger.AndroidUtilities;
-import org.telegram.messenger.FileLoader;
-import org.telegram.messenger.ImageLoader;
-import org.telegram.messenger.LocaleController;
-import org.telegram.messenger.R;
-import org.telegram.messenger.SharedConfig;
-import org.telegram.ui.ActionBar.Theme;
-import org.telegram.ui.IUpdateLayout;
+import org.iMeGram.messenger.AndroidUtilities;
+import org.iMeGram.messenger.FileLoader;
+import org.iMeGram.messenger.ImageLoader;
+import org.iMeGram.messenger.LocaleController;
+import org.iMeGram.messenger.R;
+import org.iMeGram.messenger.SharedConfig;
+import org.iMeGram.ui.ActionBar.Theme;
+import org.iMeGram.ui.IUpdateLayout;
 
 import java.io.File;
 

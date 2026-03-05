@@ -1,4 +1,4 @@
-package org.telegram.messenger;
+package org.iMeGram.messenger;
 
 public class ApplicationLoaderImpl extends ApplicationLoader {
     @Override

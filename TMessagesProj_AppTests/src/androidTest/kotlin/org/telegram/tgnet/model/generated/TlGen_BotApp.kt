@@ -1,11 +1,11 @@
-package org.telegram.tgnet.model.generated
+package org.iMeGram.tgnet.model.generated
 
 import kotlin.Long
 import kotlin.String
 import kotlin.UInt
-import org.telegram.tgnet.OutputSerializedData
-import org.telegram.tgnet.model.TlGen_Object
-import org.telegram.tgnet.model.TlGen_Vector
+import org.iMeGram.tgnet.OutputSerializedData
+import org.iMeGram.tgnet.model.TlGen_Object
+import org.iMeGram.tgnet.model.TlGen_Vector
 
 public sealed class TlGen_BotApp : TlGen_Object {
   public data object TL_botAppNotModified : TlGen_BotApp() {

@@ -155,7 +155,7 @@ android {
     buildFeatures {
         buildConfig = true
     }
-    namespace 'org.telegram.messenger.test'
+    namespace 'org.iMeGram.messenger.test'
 
     lintOptions {
         checkReleaseBuilds false

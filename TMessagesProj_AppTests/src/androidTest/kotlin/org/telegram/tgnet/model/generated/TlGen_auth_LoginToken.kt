@@ -1,12 +1,12 @@
-package org.telegram.tgnet.model.generated
+package org.iMeGram.tgnet.model.generated
 
 import kotlin.Byte
 import kotlin.Int
 import kotlin.UInt
 import kotlin.collections.List
-import org.telegram.tgnet.OutputSerializedData
-import org.telegram.tgnet.model.TlGen_Object
-import org.telegram.tgnet.model.TlGen_Vector
+import org.iMeGram.tgnet.OutputSerializedData
+import org.iMeGram.tgnet.model.TlGen_Object
+import org.iMeGram.tgnet.model.TlGen_Vector
 
 public sealed class TlGen_auth_LoginToken : TlGen_Object {
   public data class TL_auth_loginToken(
